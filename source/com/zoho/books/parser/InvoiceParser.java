@@ -181,7 +181,7 @@ public class InvoiceParser
 			lineItem.setRate(lineItems.getJSONObject(i).getDouble("rate")); 	//No I18N
 			lineItem.setBcyRate(lineItems.getJSONObject(i).getDouble("bcy_rate"));  //No I18N
 			lineItem.setItemId(lineItems.getJSONObject(i).getString("item_id"));
-			lineItem.setTimeEntryIds(lineItems.getJSONObject(i).getString("time_entry_ids"));
+			//lineItem.setTimeEntryIds(lineItems.getJSONObject(i).getString("time_entry_ids"));
 			lineItem.setDescription(lineItems.getJSONObject(i).getString("description"));
 			lineItem.setProjectId(lineItems.getJSONObject(i).getString("project_id"));
 			lineItem.setName(lineItems.getJSONObject(i).getString("name"));

@@ -337,7 +337,7 @@ public class ContactParser
 		contactPersons.setEmail(contactPerson.getString("email"));
 		contactPersons.setPhone(contactPerson.getString("phone"));
 		contactPersons.setMobile(contactPerson.getString("mobile"));
-		contactPersons.setIsPrimaryContact(contactPerson.getBoolean("is_primary_contact")); //No I18N
+		//contactPersons.setIsPrimaryContact(contactPerson.getBoolean("is_primary_contact")); //No I18N
 		if(contactPerson.has("is_added_in_portal"))
 		{
 			contactPersons.setAddedInPortal(contactPerson.getBoolean("is_added_in_portal"));	//No I18N
@@ -382,7 +382,7 @@ public class ContactParser
 			contactPerson.setEmail(jsonArray.getJSONObject(i).getString("email"));
 			contactPerson.setPhone(jsonArray.getJSONObject(i).getString("phone"));
 			contactPerson.setMobile(jsonArray.getJSONObject(i).getString("mobile"));
-			contactPerson.setIsPrimaryContact(jsonArray.getJSONObject(i).getBoolean("is_primary_contact")); //No I18N
+			//contactPerson.setIsPrimaryContact(jsonArray.getJSONObject(i).getBoolean("is_primary_contact")); //No I18N
 			if(jsonArray.getJSONObject(i).has("is_added_in_portal"))
 			{
 				contactPerson.setAddedInPortal(jsonArray.getJSONObject(i).getBoolean("is_added_in_portal")); //No I18N

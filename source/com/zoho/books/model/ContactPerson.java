@@ -358,7 +358,7 @@ public class ContactPerson
 		}
 		if((Boolean)isPrimaryContact != null)
 		{
-			jsonObject.put("is_primary_contact", isPrimaryContact);
+			//jsonObject.put("is_primary_contact", isPrimaryContact);
 		}
 		
 		
